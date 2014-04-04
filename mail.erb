@@ -1,0 +1,33 @@
+## Work finished and accepted (<%= self[:atotal_points] %> points)
+
+### Features (<%= self[:afeature_points] %> points)
+<% for story in self[:afeatures] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
+
+### Bugs (<%= self[:abug_points] %> points)
+<% for story in self[:abugs] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
+
+### Chores (<%= self[:achore_points] %> points)
+<% for story in self[:achores] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
+
+## Work finished and waiting for acceptance (<%= self[:dtotal_points] %> points)
+
+### Features (<%= self[:dfeature_points] %> points)
+<% for story in self[:dfeatures] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
+
+### Bugs (<%= self[:dbug_points] %> points)
+<% for story in self[:dbugs] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
+
+### Chores (<%= self[:dchore_points] %> points)
+<% for story in self[:dchores] %>
+  * <%= story.name %> (<%= story.estimate %>)
+<% end %>
